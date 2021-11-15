@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>SURVEY REPORT</title>
+  </head>
+
+  <body>
+    <div class="login-form">
+      <h1 style="text-align: center">SURVEY FORM</h1>
+
+      <div class="textbox">
+        <input type="text" placeholder="Enter Your Name" required />
+      </div>
+
+      <div class="textbox">
+        <input
+          type="email"
+          placeholder="Enter Your Mail ID"
+          pattern=".+@.+\..+"
+          required
+        />
+      </div>
+      <div class="textbox">
+        <input
+          type="number"
+          name="usermobile"
+          placeholder="Enter Your Mobile Number"
+          pattern="[8 9 6][0-9]{9}"
+        />
+      </div>
+
+      <div class="textbox">
+        <input type="number" placeholder="Enter Your Roll Number" required />
+      </div>
+
+      <div class="textbox">
+        <label style="background-color: rgba(0, 0, 0, 0.521)">
+          Which option best describes you?
+        </label>
+        <select name="role">
+          <option value="student">Student</option>
+          <option value="intern">Intern</option>
+          <option value="professional">Professional</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="textbox">
+        <label style="background-color: rgba(0, 0, 0, 0.521)">
+          Which sport do you like most?
+        </label>
+        <select name="Select Sport">
+          <option value="cricket">CRICKET</option>
+          <option value="football">FOOTBALL</option>
+          <option value="hockey">HOCKEY</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="textbox">
+        CLICK THIS DOT IF YOU ARE A HUMAN <input type="radio" required />
+      </div>
+
+      <input type="checkbox" required />
+      <h5>I ACCEPT ALL TERMS & CONDITIONS</h5>
+
+      <div>
+        <button class="sub1" type="SUBMIT">SUBMIT YOUR RESPONSE</button>
+      </div>
+      <h5 style="background-color: rgba(0, 0, 0, 0.521)">
+        ---THANK YOU FOR YOUR PARTICIPATION---
+      </h5>
+    </div>
+  </body>
+</html>
